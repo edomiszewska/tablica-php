@@ -1,0 +1,19 @@
+<?php 
+function liczby($a,$b){
+    $tablica=[];
+for($a;$a<=$b;$a=$a+1){
+    array_push($tablica, $a);
+
+    
+}
+$suma=0;
+foreach($tablica as $licz){
+    $suma+=$licz;
+}
+$wynik=[$tablica, $suma];
+
+return $wynik;
+}
+print_r(liczby(2,4));
+
+?>
